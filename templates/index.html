@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Notes App</h1>
+        <form id="note-form" class="mb-4">
+            <div class="form-group">
+                <input type="text" id="note" class="form-control" placeholder="Write your note here" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add Note</button>
+                <button id="random-fact-button" type="button" class="btn btn-secondary">Add Random Fact Note</button>
+            </div>
+        </form>
+        <ul id="notes-list" class="list-group">
+        </ul>
+    </div>
+</body>
+</html>
